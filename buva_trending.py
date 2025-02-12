@@ -61,6 +61,15 @@ for column in df[numerical_cols].columns:
     plt.show()
 
 def find_outliers(df, threshold=3):
+    """finds outliers in a dataframe
+
+    Args:
+        df (dataframe object): dataframe of float columns
+        threshold (int, optional): threshold for outliers. Defaults to 3.
+
+    Returns:
+        list: returns the rows of the dataframe with outliers
+    """
     outlier_indices = []
     
     # Calculate Z-scores for each column
@@ -89,6 +98,12 @@ print("\nDataFrame after removing outliers:")
 print(df_cleaned)
 
 def plot_columns_side_by_side(df1, df2):
+    """plots datafarmes with the same columns side by side
+
+    Args:
+        df1 (dataframe object): dataframe, pre data-cleaning for example
+        df2 (dataframe object): dataframe, post data-cleaning
+    """
     for column in df1.columns:
         if column in df2.columns:
             fig, axes = plt.subplots(1, 2, figsize=(20, 6))
