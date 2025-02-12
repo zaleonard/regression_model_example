@@ -1,7 +1,8 @@
 #***Regression modeling blueprint***
+
 This repo contains a blueprint that I have put together for running regression modeling type tasks.  It takes an excel file as an input for now, and relies on the user for determining which parameters to select for model training
 
-#***How It's Made***
+##***How It's Made***
 
 Tech used: Python.  A requirements.txt is included for relevant modules.  Create environment using requirements.txt
 The script is broken up into a few different sections:
@@ -14,7 +15,7 @@ The script is broken up into a few different sections:
 7. Model prediction graphs to aid in model selection
 8. Final model selection, feature importance, and saving the model
 
-#***Optimizations***
+##***Optimizations***
 
 - there are some redundencies in the code
 - Develop more OOP version of this code
